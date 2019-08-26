@@ -10,6 +10,9 @@ def Quickgit(words = None):
     time.sleep(1)
     os.system("git push")
 
+__author__ = "Josh Zack"
+__email__ = "zackjm@mail.uc.edu"
+
 if __name__ == "__main__":
     #Quickgit()
     Quickgit("Minor_change_somewhere")
