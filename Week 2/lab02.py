@@ -16,10 +16,10 @@ def a_plus_abs_b(a, b):
     5
     """
     if b < 0:
-        f = a-b
+        f = lambda a,b: a-b
     else:
-        f = a+b
-    return (f)
+        f = lambda a,b: a+b
+    return f(a,b)
 
 
 #  RQ2
@@ -37,9 +37,7 @@ def two_of_three(a, b, c):
     50
     """
 
-    small = 99999
-    if a < small:
-        small = a
+    small = a
     if b < small:
         small = b
     if c < small:
