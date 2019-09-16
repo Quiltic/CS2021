@@ -8,11 +8,11 @@ def greedy(top, bottom):
     """Return a+abs(b), but without calling abs.
 
     >>> greedy(1, 2)
-    1/2
+    '1/2'
     >>> greedy(11, 12)
-    1/2 + 1/3 + 1/12
+    '1/2 + 1/3 + 1/12'
     >>> greedy(3, 4)
-    1/2 + 1/4
+    '1/2 + 1/4'
     """
     out = "" # what the file will output
     frac = (top/bottom) # the fraction turned into decimal
