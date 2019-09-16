@@ -14,25 +14,26 @@ def greedy(top, bottom):
     >>> greedy(3, 4)
     1/2 + 1/4
     """
-    out = ""
-    frac = (top/bottom)
-    a = 1
-    while (frac > 0.0000001):
-        if round(frac-(1/a), 10) >= 0.:
-            frac -= (1/a)
-            out += (" + 1/%s" % a)
+    out = "" # what the file will output
+    frac = (top/bottom) # the fraction turned into decimal
+    a = 1 
+    while (frac > 0.0000001): # to make it stop when it gets too small
+
+        if round(frac-(1/a), 10) >= 0: # make sure it isent going over
+            frac -= (1/a) # remove the amount
+            out += (" + 1/%s" % a) # add it to the output
+
         a += 1
 
-        #print(frac)
-    out = out[3:]
-    print(out)
+    out = out[3:] # remove the " + " from the begining
+    return(out)
 
 
 import doctest
 if __name__ == "__main__":
     doctest.testmod(verbose=True)
 
-    print(3*"\n")
+    print(3*"\n") # 3 new lines
     p = int(input("Give the Numerator for the fraction: "))
     q = int(input("Give the Denominator for the fraction: "))
-    greedy(p,q)
+    print(greedy(p,q))
