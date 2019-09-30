@@ -116,15 +116,10 @@ def middle_tweet(word, table):
         average += len(random_tweet(table))
     
     average /= 5
-    #print('\n',average)
-    result = word + ' '
+    result = ''
 
-    word = random.choice(table['.'])
-    while len(result) < average:
-        result += word + ' '
-        word = random.choice(table[word])
-
-    result += '.'
+    while len(result) != int(average):
+        result = construct_tweet(word,table)
     return(result)
     
 
@@ -134,6 +129,6 @@ if __name__ == "__main__":
 
     shakestokens = shakespeare_tokens()
     shakestable = build_successors_table(shakestokens)
-    result = middle_tweet("We: ",shakestable)
+    result = middle_tweet("We",shakestable)
     print(result,'\n',"Length of tweet:",len(result))
     
