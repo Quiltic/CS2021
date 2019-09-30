@@ -8,11 +8,11 @@ def merge(dict1, dict2):
     """Merges two Dictionaries. Returns a new dictionary that combines both. You may assume all keys are unique.
 
     >>> merge({1: 'one', 3:'three', 5:'five'}, {2: 'two', 4: 'four'})
-    {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five'}
+    {1: 'one', 3: 'three', 5: 'five', 2: 'two', 4: 'four'}
     """
     "*** YOUR CODE HERE ***"
     newdic = {}
-
+    '''
     for a in range(len(dict1)+len(dict2)):
         try:
             newdic[a+1] = dict1[a+1]
@@ -24,7 +24,7 @@ def merge(dict1, dict2):
 
     for a in dict2:
         newdic[a] = dict2[a]
-    '''
+    #'''
 
     return(newdic)
 
