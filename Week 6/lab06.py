@@ -119,6 +119,7 @@ def has_kitty_gene(dna):
         dna = rest(dna)
             
     return(False)
+    #'''
 
 
 
@@ -209,4 +210,4 @@ def print_link(s):
 
 import doctest
 if __name__ == "__main__":
-    doctest.testmod(verbose=True)
+    doctest.testmod(verbose=False)

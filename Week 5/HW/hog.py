@@ -1,3 +1,6 @@
+__author__ = "Josh Zack"
+__email__ = "zackjm@mail.uc.edu"
+
 """The Game of Hog."""
 
 from dice import four_sided, six_sided, make_test_dice
