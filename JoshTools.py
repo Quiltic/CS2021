@@ -15,4 +15,4 @@ __email__ = "zackjm@mail.uc.edu"
 
 if __name__ == "__main__":
     #Quickgit()
-    Quickgit("Minor_change_somewhere")
+    Quickgit("Added_new_lab")
